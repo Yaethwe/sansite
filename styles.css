@@ -1,0 +1,76 @@
+.navBar{
+	color:#2f6f80;
+	background-color:#2f6f80;
+	text-align:left;
+}
+
+.none{
+	border:0px;
+	color:#2f6f80;
+	background-color:#2f6f80;
+}
+
+.logoImg{
+	width:50px;
+	border-radius:35px;
+	padding-top:25px;
+}
+
+.titleLogo{
+	color:gold;
+	background-color:#2f6f80;
+	font-family: elephant;
+	font-size: 40px;
+	border:0px;
+}
+
+.navLinkBtn{
+	color:#dce86b;
+	background-color:#2f6f80;
+	border:0px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+.navLinkBtnSelected{
+	color:white;
+	background-color:#cfcfcf;
+	padding-bottom:10px;
+	border:0px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+.navLinkBtn:hover{
+	color:#e7ff00;
+	background-color:#7d7d7d;
+	border:0px;
+	font-weight:bold;
+	font-size:20px;
+}
+
+.homeDiv{
+	background-color:#cfcfcf;
+	width:1000px;
+	height:700px;
+}
+
+.aboutusDiv{
+	background-color:#cfcfcf;
+	width:1000px;
+	height:700px;
+}
+
+.textDiv{
+	background-color:#bdbdbd;
+	color:blue;
+	width:500px;
+}
+
+.titleTxt{
+	color:#00ffa6;
+	background-color:#85006e;
+}
+body{
+	background-color:#4a4a4a;
+}
