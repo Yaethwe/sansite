@@ -1,29 +1,40 @@
-//start phostDiv
-
-
-
-const petsData = [
-  {
-    name: "Purrsloud",
-    species: "Cat",
-    favFoods: ["wet food", "dry food", "<strong>any</strong> food"],
-    birthYear: 2016,
-    photo: "https://learnwebcode.github.io/json-example/images/cat-2.jpg"
-  },
-  {
-    name: "Barksalot",
-    species: "Dog",
-    birthYear: 2008,
-    photo: "https://learnwebcode.github.io/json-example/images/dog-1.jpg"
-  },
-  {
-    name: "Meowsalot",
-    species: "Cat",
-    favFoods: ["tuna", "catnip", "celery"],
-    birthYear: 2012,
-    photo: "https://learnwebcode.github.io/json-example/images/cat-1.jpg"
-  }
+const img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTWJugnnPbaV749iNXusJYvcWgRRSJrC9Ua8btqnxZcQ-h-pf5xnJYIQk-lBuBgM4X4tsg&usqp=CAU";
+const girl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4eYDRkAQhPg5IKgma7Y-QVdvu6pwxugmfCAXaD5pXOvG7vUIFOJ4m7hYxBwgBExlVbt0&usqp=CAU";
+const members = [
+{
+	name:"Yeaethwe",
+	birthYear: 2007,
+	gender:"male",
+	hobbies:["Reading Books", "Making Projects with Html,Css & JavaScript", "Play Minecraft"],
+	working:true,
+	photo: img
+},
+{
+	name:"NyanKaungSet",
+	birthYear: 2007,
+	gender:"male",
+	hobbies:["unown"],
+	working:true,
+	photo: img
+},
+{
+	name:"ShinKhantNaing",
+	birthYear: 2009,
+	gender:"male",
+	hobbies:["unown"],
+	working:false,
+	photo: img
+},
+{
+	name:"SanSan",
+	birthYear: 2015,
+	gender:"female",
+	hobbies:["Distrubing his brother"],
+	working:false,
+	photo: girl
+}
 ];
+
 
 function age(birthYear) {
   let calculatedAge = new Date().getFullYear() - birthYear;
@@ -36,25 +47,41 @@ function age(birthYear) {
   }
 }
 
-function foods(foods) {
+function work(x) {
+	if (x == true) {
+		return "Working Member"
+	} else {
+		return "Not Working Member"
+	}
+}
+
+function hobbies(hobbies) {
   return `
-<h4>Favorite Foods</h4>
+<h4>Hobbies</h4>
 <ul class="foods-list">
-${foods.map(food => `<li>${food}</li>`).join("")}
+${hobbies.map(hobbies => `<li>${hobbies}</li>`).join("")}
 </ul>
 `;
 }
 
-function petTemplate(pet) {
+function petTemplate(get) {
   return `
-    <div class="animal">
-    <img class="pet-photo" src="${pet.photo}">
-    <h2 class="pet-name">${pet.name} <span class="species">(${pet.species})</span></h2>
-    <p><strong>Age:</strong> ${age(pet.birthYear)}</p>
-    ${pet.favFoods ? foods(pet.favFoods) : ""}
+    <div class="member">
+    <img class="get-photo" src="${get.photo}">
+    <h2 class="get-name">${get.name} <span class="species">(${get.gender})</span></h2>
+    <p><strong>Age:</strong> ${age(get.birthYear)}</p>
+    ${get.hobbies ? hobbies(get.hobbies) : ""}
+	<p>${work(get.working)}</p>
     </div>
   `;
 }
+
+document.getElementById("app").innerHTML = `
+  <h1 class="app-title">There are ${members.length} members in our group.</h1>
+  ${members.map(petTemplate).join("")}
+  <p class="footer">These ${members.length} members were added recently. Check back soon for updates.</p>
+`;
+
 
 
 
@@ -69,12 +96,6 @@ $(document).ready(function(){
   });
 });
 */
-
-document.getElementById("app").innerHTML = `
-  <h1 class="app-title">Pets (${petsData.length} results)</h1>
-  ${petsData.map(petTemplate).join("")}
-  <p class="footer">These ${petsData.length} pets were added recently. Check back soon for updates.</p>
-`;
 
 function aboutus() {
 	location.href="aboutus.html";
