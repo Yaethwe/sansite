@@ -41,6 +41,7 @@
 	border:0px;
 	font-weight:bold;
 	font-size:20px;
+	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
 .navLinkBtn:hover{
@@ -132,10 +133,21 @@ img {
 }
 
 .footer {
-  font-size: 0.7rem;
-  color: #888;
+  font-size: 0.9rem;
+  color: white;
   text-align: center;
   margin: 0;
+}
+
+.postContainDiv{
+  background-color:skyblue;
+  text-align:left;
+  padding:5px;
+}
+
+.textLeft{
+	text-align:left;
+	padding:15px;
 }
 
 /*phostDiv end*/
