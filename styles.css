@@ -15,7 +15,10 @@
 .logoImg{
 	width:50px;
 	border-radius:35px;
-	padding-top:25px;
+	padding-top:5px;
+	padding-bottom:5px;
+	padding-left:5px;
+	padding-right:-5px;
 }
 
 .titleLogo{
