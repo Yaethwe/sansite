@@ -1,6 +1,5 @@
 const bt = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsgvwW4N3jCpbvE0Lzb7E0KwCYiBUQ5W03BbYoEOS9AYBss7k4HMQ0sqdq-HIRGRuY82k&usqp=CAU";
-const img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVNcn34DzXjt6nayz443HvrPTrgnq_0GYwxD93DXuZG5faGLc3R-e8UO-FRLYRi1wvRxM&usqp=CAU";
-const girl = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4eYDRkAQhPg5IKgma7Y-QVdvu6pwxugmfCAXaD5pXOvG7vUIFOJ4m7hYxBwgBExlVbt0&usqp=CAU";
+const img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhuS370SIIOZUXg9WCwuiV7JefY4JkyUNPOg&usqp=CAU";
 const items = [
 {
 	name:"Remax ",
@@ -10,6 +9,15 @@ const items = [
 	count:1,
 	photo: bt,
     itemId:"001"
+},
+{
+	name:"CMP M1911|A1",
+	prise: 75000,
+	type:"United States Pistol",
+	aboutItm:["This is a Fake gun.", "You can't shoot it because it's a photo"],
+	count:0,
+	photo: img,
+    itemId:"002"
 }
 ];
 
@@ -50,5 +58,5 @@ function getTemplate(get) {
 document.getElementById("shop").innerHTML = `
   <h1 class="app-title">There are ${items.length}items in our shop.....................................</h1>
   ${items.map(getTemplate).join("")}
-  <p class="footer">These ${items.length} members were added recently. Check back soon for updates.</p>
+  <p class="footer">These ${items.length} items were added recently. Check back soon for updates.</p>
 `;
