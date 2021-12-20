@@ -15,7 +15,7 @@ const items = [
 	name:"Ubantu|Linux computer",
 	prise: 1923800,
 	type:"computer",
-	aboutItm:["This is computer is beyond my reach."],
+	aboutItm:["This computer is beyond my reach."],
 	count:0,
 	photo: img,
     itemId:"002"
