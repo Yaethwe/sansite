@@ -1,10 +1,27 @@
 .navBar{
 	color:#2f6f80;
 	background-color:#2f6f80;
+	display:flex;
+    justify-content: space-between;
+	box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.stepnav1{
+    color:#2f6f80;
+	background-color:#2f6f80;
+	display:flex;
+    justify-content: flex-start;
+}
+
+.stepnav1{
+    color:#2f6f80;
+	background-color:#2f6f80;
 	text-align:left;
 	display:flex;
+    justify-content: flex-end;
 	margin: 0 auto;
 }
+
 
 .none{
 	border:0px;
@@ -47,6 +64,7 @@
 	box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
+
 .navLinkBtn:hover{
 	color:#e7ff00;
 	background-color:#7d7d7d;
@@ -57,13 +75,15 @@
 
 .homeDiv{
 	background-color:#cfcfcf;
-	width:1000px;
-	height:700px;
+    display:flex;
+    justify-content: flex-start;
+	width:auto;
+	height:auto;
 }
 
 .aboutusDiv{
 	background-color:#cfcfcf;
-	width:1000px;
+	width:auto;
 	height:700px;
 }
 
@@ -72,6 +92,7 @@
 	color:blue;
 	width:500px;
 	margin-top:-20px;
+	box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
 }
 
 .titleTxt{
@@ -102,6 +123,7 @@ img {
   background-color: #fff;
   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.1);
   overflow: hidden;
+  border-radius:5px;
 }
 
 .member h4 {
