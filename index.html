@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title id="pageTitle">SanSite Online Shop</title>
+        <title id="pageTitle">Standard site 1 - yt</title>
 
 		<!--load addtional liberies-->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -19,24 +19,24 @@
 	<body>
 	    <link rel="stylesheet" href="styles.css">
 		<div id="navBar" class="navBar">
-			<img src="sansiteIcon.png" class="logoImg">
-			<input type="button" type="button" class="titleLogo" value="$an $ite">
-			<input type="button" value="__" class="none">
-			<input type="button" value="HOME" class="navLinkBtnSelected">
-			<input type="button" value="ABOUT US" class="navLinkBtn" onclick="aboutus()">
+            <div class="stepnav1">
+                <img src="sansiteIcon.png" class="logoImg">
+                <input type="button" type="button" class="titleLogo" value="$an $ite">
+            </div>
+            <div class="stepnav2">   
+                <input type="button" value="HOME" class="navLinkBtnSelected">
+                <input type="button" value="ABOUT US" class="navLinkBtn" onclick="aboutus()">
+            </div>
 		</div>
-		<center>
+        
 		<div id="homeDiv" class="homeDiv">
-			<div class="alert alert-danger alert-dismissible" id="myAlert">
-				<!--<a href="#" class="close">&times;</a><strong>Hey you!</strong> Try to close this alert message.-->
-				
-				<div id="postContainDiv" class="postContainDiv">
-					<div id="app"></div>
-					
-				</div>
+
+			<div id="postContainDiv" class="postContainDiv">
+					<div id="shop"></div>
 			</div>
 		</div>
-		<!-- Messenger Chat Plugin Code -->
+
+        <!-- Messenger Chat Plugin Code -->
 			    <div id="fb-root"></div>
 
 			    <!-- Your Chat Plugin code -->
@@ -66,8 +66,11 @@
 				fjs.parentNode.insertBefore(js, fjs);
 			      }(document, 'script', 'facebook-jssdk'));
 			    </script>
-		</center>
+        
+        
 	</body>
 	<script src="scripts.js"></script>
+    <script src="shopdata.js"></script>
+
 	
 </html>
