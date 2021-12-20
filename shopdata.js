@@ -1,5 +1,6 @@
 const bt = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQsgvwW4N3jCpbvE0Lzb7E0KwCYiBUQ5W03BbYoEOS9AYBss7k4HMQ0sqdq-HIRGRuY82k&usqp=CAU";
-const img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhuS370SIIOZUXg9WCwuiV7JefY4JkyUNPOg&usqp=CAU";
+const img = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIu_25CAGhQiuFd4z_SvFvfIZCbkjsoGe5waJE5jyeC81C1rKHtromZEaYgnKpvST6PuQ&usqp=CAU";
+const com = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI15bFpHnIx-BK8AqmopWDLS9UM8ClpfXPZPa2Egb-n87D1n5xGtA7_bvu3XPNSOVBKyw&usqp=CAU";
 const items = [
 {
 	name:"Remax ",
@@ -11,13 +12,22 @@ const items = [
     itemId:"001"
 },
 {
-	name:"CMP M1911|A1",
-	prise: 75000,
-	type:"United States Pistol",
-	aboutItm:["This is a Fake gun.", "You can't shoot it because it's a photo"],
+	name:"Ubantu|Linux computer",
+	prise: 1923800,
+	type:"computer",
+	aboutItm:["This is computer is beyond my reach."],
 	count:0,
 	photo: img,
     itemId:"002"
+},
+{
+	name:"Raspberry Pi 4",
+	prise: 23100,
+	type:"computer",
+	aboutItm:["This is computer is a mini computer", "And you need a screen to run it."],
+	count:4,
+	photo: com,
+    itemId:"003"
 }
 ];
 
