@@ -9,7 +9,7 @@ const items = [
 	aboutItm:["This is a blue tooth speaker.", "You can use it with SD card too."],
 	count:1,
 	photo: bt,
-    itemId:"001"
+    	itemId:"001"
 },
 {
 	name:"Ubantu|Linux computer",
@@ -18,16 +18,16 @@ const items = [
 	aboutItm:["This computer is beyond my reach."],
 	count:0,
 	photo: img,
-    itemId:"002"
+    	itemId:"002"
 },
 {
 	name:"Raspberry Pi 4",
 	prise: 23100,
 	type:"computer",
-	aboutItm:["This is computer is a mini computer", "And you need a screen to run it."],
+	aboutItm:["This computer is a mini computer", "And you need a screen for visual.", "If you host a website with it you can", "This item is not for sale."],
 	count:4,
 	photo: com,
-    itemId:"003"
+    	itemId:"003"
 }
 ];
 
